@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AddPostComponent } from './add-post/add-post.component';
 import { RouterModule, RouterStateSnapshot, Routes, ROUTES, RoutesRecognized } from '@angular/router';
 import { ViewAllpostsComponent } from './view-allposts/view-allposts.component';
+import { ViewAllpostComponent } from './view-allpost/view-allpost.component';
 
 const myRoute:Routes=[
 {
@@ -27,7 +28,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddPostComponent,
-    ViewAllpostsComponent
+    ViewAllpostsComponent,
+    ViewAllpostComponent
   ],
   imports: [
     BrowserModule,
