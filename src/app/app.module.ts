@@ -8,6 +8,7 @@ import { RouterModule, RouterStateSnapshot, Routes, ROUTES, RoutesRecognized } f
 import { ViewAllpostsComponent } from './view-allposts/view-allposts.component';
 import { ViewAllpostComponent } from './view-allpost/view-allpost.component';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
 const myRoute:Routes=[
 {
@@ -36,7 +37,8 @@ const myRoute:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
